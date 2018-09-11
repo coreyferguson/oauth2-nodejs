@@ -5,6 +5,8 @@ var router = express.Router()
 
 /** /callback **/
 router.get('/', function (req, res) {
+  console.log('realmId: ', req.query.realmId);
+
   // Verify anti-forgery
   if(!tools.verifyAntiForgery(req.session, req.query.state)) {
     return res.send('Error - invalid anti-forgery CSRF response!')

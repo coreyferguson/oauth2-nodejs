@@ -1,7 +1,7 @@
 {
-  "clientId": "<enter-client-id>",
-  "clientSecret": "<enter-client-secret>",
-  "redirectUri": "https://<host>/callback",
+  "clientId": "Q0doFcxapgIAnEgdnI1L1XcLqLEpig9zyML4RrV0d09M1NC7ou",
+  "clientSecret": "0jrifutw1eaEdepw1g21ogFQLiKlBwfxmn32NMxK",
+  "redirectUri": "https://localhost:3000/callback",
   "configurationEndpoint": "https://developer.api.intuit.com/.well-known/openid_sandbox_configuration/",
   "api_uri": "https://sandbox-quickbooks.api.intuit.com/v3/company/",
   "scopes": {
@@ -9,21 +9,22 @@
       "openid",
       "profile",
       "email",
-      "phone",
-      "address"
+      "com.intuit.quickbooks.accounting",
+      "Intuit.smallbusiness.accountantpracticemanagement.tierservice.programstatus"
     ],
     "connect_to_quickbooks": [
-      "com.intuit.quickbooks.accounting",
-      "com.intuit.quickbooks.payment"
-    ],
-    "connect_handler": [
-      "com.intuit.quickbooks.accounting",
-      "com.intuit.quickbooks.payment",
       "openid",
       "profile",
       "email",
-      "phone",
-      "address"
+      "com.intuit.quickbooks.accounting",
+      "Intuit.smallbusiness.accountantpracticemanagement.tierservice.programstatus"
+    ],
+    "connect_handler": [
+      "openid",
+      "profile",
+      "email",
+      "com.intuit.quickbooks.accounting",
+      "Intuit.smallbusiness.accountantpracticemanagement.tierservice.programstatus"
     ]
   }
 }
