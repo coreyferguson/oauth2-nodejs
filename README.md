@@ -22,13 +22,19 @@ cd oauth2-nodejs
 npm install
 ```
 
+Add `sample.com` as a local `/etc/hosts` entry:
+
+```
+127.0.0.1 sample.com
+```
+
 Launch your app:
 
 ```
 node app.js
 ```
 
-Navigate to https://localhost:3000 (you may want to use Incognito to avoid conflicts with existing session).
+Navigate to https://sample.com:3000 (you may want to use Incognito to avoid conflicts with existing session).
 
 ## Scopes
 
